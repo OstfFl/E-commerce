@@ -1,0 +1,24 @@
+<categories>
+    <category>smartphones</category>
+    <category>laptops</category>
+    <category>fragrances</category>
+    <category>skincare</category>
+    <category>groceries</category>
+    <category>home-decoration</category>
+    <category>furniture</category>
+    <category>tops</category>
+    <category>womens-dresses</category>
+    <category>womens-shoes</category>
+    <category>mens-shirts</category>
+    <category>mens-shoes</category>
+    <category>mens-watches</category>
+    <category>womens-watches</category>
+    <category>womens-bags</category>
+    <category>womens-jewellery</category>
+    <category>sunglasses</category>
+    <category>automotive</category>
+    <category>motorcycle</category>
+    <category>lighting</category>
+    <category>motorcycles</category>
+    <category>cars</category>
+</categories>

@@ -1,0 +1,156 @@
+[
+    {
+        "id": 89,
+        "name": "smartphones",
+        "slug": "smartphones",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 90,
+        "name": "laptops",
+        "slug": "laptops",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 91,
+        "name": "fragrances",
+        "slug": "fragrances",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 92,
+        "name": "skincare",
+        "slug": "skincare",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 93,
+        "name": "groceries",
+        "slug": "groceries",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 94,
+        "name": "home-decoration",
+        "slug": "home-decoration",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 95,
+        "name": "furniture",
+        "slug": "furniture",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 96,
+        "name": "tops",
+        "slug": "tops",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 97,
+        "name": "womens-dresses",
+        "slug": "womens-dresses",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 98,
+        "name": "womens-shoes",
+        "slug": "womens-shoes",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 99,
+        "name": "mens-shirts",
+        "slug": "mens-shirts",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 100,
+        "name": "mens-shoes",
+        "slug": "mens-shoes",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 101,
+        "name": "mens-watches",
+        "slug": "mens-watches",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 102,
+        "name": "womens-watches",
+        "slug": "womens-watches",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 103,
+        "name": "womens-bags",
+        "slug": "womens-bags",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 104,
+        "name": "womens-jewellery",
+        "slug": "womens-jewellery",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 105,
+        "name": "sunglasses",
+        "slug": "sunglasses",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 106,
+        "name": "automotive",
+        "slug": "automotive",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 107,
+        "name": "motorcycle",
+        "slug": "motorcycle",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 108,
+        "name": "lighting",
+        "slug": "lighting",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 109,
+        "name": "motorcycles",
+        "slug": "motorcycles",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    },
+    {
+        "id": 110,
+        "name": "cars",
+        "slug": "cars",
+        "created_at": "2023-06-12T09:44:57.000000Z",
+        "updated_at": "2023-06-12T09:44:57.000000Z"
+    }
+]

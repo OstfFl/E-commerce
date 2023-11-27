@@ -1,0 +1,239 @@
+<div>
+    <style>
+        nav svg {
+            height: 20px;
+        }
+
+        nav .hidden {
+            display: block;
+        }</style>
+    <main class="main">
+{{--        <div class="page-header breadcrumb-wrap">--}}
+{{--            <div class="container">--}}
+{{--                <div class="breadcrumb">--}}
+{{--                    <a href="index.html" rel="nofollow">Home</a>--}}
+{{--                    <span></span> Shop--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+        <section class="mt-50 mb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="shop-product-fillter">
+                            <div class="totall-product">
+                                <p> Znaleziono <strong class="text-brand">{{$products->total()}}</strong> elementów!
+                                </p>
+                            </div>
+                            <div class="sort-by-product-area">
+                                <div class="sort-by-cover mr-10">
+                                    <div class="sort-by-product-wrap">
+                                        <div class="sort-by">
+                                            <span><i class="fi-rs-apps"></i>Pokaż:</span>
+                                        </div>
+                                        <div class="sort-by-dropdown-wrap">
+                                            <span> {{$pageSize}} <i class="fi-rs-angle-small-down"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="sort-by-dropdown">
+                                        <ul>
+                                            <li><a class="{{$pageSize==12 ? 'active': ''}}" href="#"
+                                                   wire:click.prevent="changePageSize(12)">12</a></li>
+                                            <li><a class="{{$pageSize==15 ? 'active': ''}}" href="#"
+                                                   wire:click.prevent="changePageSize(15)">15</a></li>
+                                            <li><a class="{{$pageSize==25 ? 'active': ''}}" href="#"
+                                                   wire:click.prevent="changePageSize(25)">25</a></li>
+                                            <li><a class="{{$pageSize==32 ? 'active': ''}}" href="#"
+                                                   wire:click.prevent="changePageSize(32)">32</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sort-by-cover">
+                                    <div class="sort-by-product-wrap">
+                                        <div class="sort-by">
+                                            <span><i class="fi-rs-apps-sort"></i>Sortuj według:</span>
+                                        </div>
+                                        <div class="sort-by-dropdown-wrap">
+            <span>
+                @if ($orderBy == 'Default Sorting')
+                    Standardowo
+                @elseif ($orderBy == 'Price: Low to High')
+                    Cena: Niska - Wysoka
+                @elseif ($orderBy == 'Price: High to Low')
+                    Cena: Wysoka - Niska
+                @elseif ($orderBy == 'Sort by Newest')
+                    Według najnowszych
+                @endif
+                <i class="fi-rs-angle-small-down"></i>
+            </span>
+                                        </div>
+                                    </div>
+                                    <div class="sort-by-dropdown">
+                                        <ul>
+                                            <li>
+                                                <a class="{{ $orderBy == 'Default Sorting' ? 'active' : '' }}" href="#"
+                                                   wire:click.prevent="ChangeOrderBy('Default Sorting')">Standardowo</a>
+                                            </li>
+                                            <li>
+                                                <a class="{{ $orderBy == 'Price: Low to High' ? 'active' : '' }}" href="#"
+                                                   wire:click.prevent="ChangeOrderBy('Price: Low to High')">Cena: Niska - Wysoka</a>
+                                            </li>
+                                            <li>
+                                                <a class="{{ $orderBy == 'Price: High to Low' ? 'active' : '' }}" href="#"
+                                                   wire:click.prevent="ChangeOrderBy('Price: High to Low')">Cena: Wysoka - Niska</a>
+                                            </li>
+                                            <li>
+                                                <a class="{{ $orderBy == 'Sort by Newest' ? 'active' : '' }}" href="#"
+                                                   wire:click.prevent="ChangeOrderBy('Sort by Newest')">Według najnowszych</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row product-grid-3">
+                            @php
+                                $witems=Cart::instance('wishlist')->content()->pluck('id');
+                            @endphp
+                            @foreach($products as $product)
+                                <div class="col-lg-4 col-md-4 col-6 col-sm-6">
+                                    <div class="product-cart-wrap mb-30">
+                                        <div class="product-img-action-wrap">
+                                            <div class="product-img product-img-zoom">
+                                                <a href="{{route('product.details',['slug'=>$product->slug])}}">
+                                                    <img class="default-img"
+                                                         src="{{ $images->where('product_id', $product->id)->first()->image }}"
+                                                         alt="{{$product->name}}">
+
+                                                </a>
+                                            </div>
+                                            <div class="product-action-1">
+                                                @if($witems->contains($product->id))
+                                                    <a aria-label="Usuń" class="action-btn hover-up wishlisted"
+                                                       href="#" wire:click.prevent="remoweFromWishlist({{$product->id}})"><i class="fi-rs-heart"></i></a>
+                                                @else
+                                                    <a aria-label="Dodaj do Listy Zyczeń" class="action-btn hover-up"
+                                                       href="#" wire:click.prevent="addToWishlist({{$product->id}},'{{$product->name}}',{{$product->sale_price}})"><i class="fi-rs-heart"></i></a>
+                                                @endif
+                                            </div>
+
+                                        </div>
+                                        <div class="product-content-wrap">
+
+                                            <h2><a href="{{route('product.details',['slug'=>$product->slug])}}">{{$product->name}}</a></h2>
+                                            <div class="rating-result" title="90%">
+                                            <span>
+
+                                            </span>
+                                            </div>
+                                            <div class="product-price">
+                                                <span>${{$product->sale_price}} </span>
+
+                                            </div>
+                                            <div class="product-action-1 show">
+                                                <a aria-label="Dodaj do Kosza" class="action-btn hover-up" href="#"
+                                                   wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->sale_price}})"><i
+                                                        class="fi-rs-shopping-bag-add"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+
+                        </div>
+                        <!--pagination-->
+                        <div class="pagination-area mt-15 mb-sm-5 mb-lg-0">
+                            {{$products->links()}}
+                            {{--                            <nav aria-label="Page navigation example">--}}
+                            {{--                                <ul class="pagination justify-content-start">--}}
+                            {{--                                    <li class="page-item active"><a class="page-link" href="#">01</a></li>--}}
+                            {{--                                    <li class="page-item"><a class="page-link" href="#">02</a></li>--}}
+                            {{--                                    <li class="page-item"><a class="page-link" href="#">03</a></li>--}}
+                            {{--                                    <li class="page-item"><a class="page-link dot" href="#">...</a></li>--}}
+                            {{--                                    <li class="page-item"><a class="page-link" href="#">16</a></li>--}}
+                            {{--                                    <li class="page-item"><a class="page-link" href="#"><i class="fi-rs-angle-double-small-right"></i></a></li>--}}
+                            {{--                                </ul>--}}
+                            {{--                            </nav>--}}
+                        </div>
+                    </div>
+                    <div class="col-lg-3 primary-sidebar sticky-sidebar">
+                        <div class="row">
+                            <div class="col-lg-12 col-mg-6"></div>
+                            <div class="col-lg-12 col-mg-6"></div>
+                        </div>
+                        <div class="widget-category mb-30">
+                            <h5 class="section-title style-1 mb-30 wow fadeIn animated">Kategoria</h5>
+                            <ul class="categories">
+                                @foreach($categories as $category)
+                                    <li><a href="{{route('product.category',['slug'=>$category->slug])}}">{{$category->name}}</a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget price_range range mb-30">
+                            <div class="widget-header position-relative mb-20 pb-10">
+                                <h5 class="widget-title mb-10">Filtruj według ceny</h5>
+                                <div class="bt-1 border-color-1"></div>
+                            </div>
+                            <div class="price-filter">
+                                <div class="price-filter-inner">
+                                    <div id="slider-range" wire:ignore> </div>
+                                    <div class="price_slider_amount">
+                                        <div class="label-input">
+                                            <span>Zakres:</span><span class="text-info">${{$min_value}}</span> - <span class="text-info">${{$max_value}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group">
+
+                            </div>
+                        </div>
+                        <!-- Product sidebar Widget -->
+                        <div class="sidebar-widget product-sidebar  mb-30 p-30 bg-grey border-radius-10">
+                            <div class="widget-header position-relative mb-20 pb-10">
+                                <h5 class="widget-title mb-10">Nowe Produkty</h5>
+                                <div class="bt-1 border-color-1"></div>
+                            </div>
+                            @foreach($nproducts as $nproduct)
+                                <div class="single-post clearfix">
+                                    <div class="image">
+                                        <img src="{{ $images->where('product_id', $nproduct->id)->first()->image}}" alt="{{$nproduct->name}}">
+                                    </div>
+                                    <div class="content pt-10">
+                                        <h5><a href="{{route('product.details',['slug'=>$nproduct->slug])}}">{{$nproduct->name}}</a></h5>
+                                        <p class="price mb-0 mt-5">{{$nproduct->sale_price}}</p>
+                                        <div class="product-rate">
+                                            <div class="product-rating" style="width:90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+@push('scripts')
+    <script>
+        var sliderrange = $('#slider-range');
+        var amountprice = $('#amount');
+        $(function () {
+            sliderrange.slider({
+                range: true,
+                min: 0,
+                max: 10000,
+                values: [0, 10000],
+                slide: function (event, ui) {
+                    // amountprice.val("$" + ui.values[0] + " - $" + ui.values[1]);
+                @this.set('min_value',ui.values[0]);
+                @this.set('max_value',ui.values[1]);
+                }
+            });
+        });
+    </script>
+@endpush

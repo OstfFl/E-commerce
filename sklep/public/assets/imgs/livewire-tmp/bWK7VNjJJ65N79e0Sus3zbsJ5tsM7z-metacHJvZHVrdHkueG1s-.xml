@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <products>
+    <id>1</id>
+    <title>iPhone 9</title>
+    <description>An apple mobile which is nothing like apple</description>
+    <price>549</price>
+    <discountPercentage>12.96</discountPercentage>
+    <rating>4.69</rating>
+    <stock>94</stock>
+    <brand>Apple</brand>
+    <category>smartphones</category>
+    <thumbnail>https://i.dummyjson.com/data/products/1/thumbnail.jpg</thumbnail>
+    <images>https://i.dummyjson.com/data/products/1/1.jpg</images>
+    <images>https://i.dummyjson.com/data/products/1/2.jpg</images>
+    <images>https://i.dummyjson.com/data/products/1/3.jpg</images>
+    <images>https://i.dummyjson.com/data/products/1/4.jpg</images>
+    <images>https://i.dummyjson.com/data/products/1/thumbnail.jpg</images>
+  </products>
+  <products>
+    <id>2</id>
+    <title>iPhone X</title>
+    <description>SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...</description>
+    <price>899</price>
+    <discountPercentage>17.94</discountPercentage>
+    <rating>4.44</rating>
+    <stock>34</stock>
+    <brand>Apple</brand>
+    <category>smartphones</category>
+    <thumbnail>https://i.dummyjson.com/data/products/2/thumbnail.jpg</thumbnail>
+    <images>https://i.dummyjson.com/data/products/2/1.jpg</images>
+    <images>https://i.dummyjson.com/data/products/2/2.jpg</images>
+    <images>https://i.dummyjson.com/data/products/2/3.jpg</images>
+    <images>https://i.dummyjson.com/data/products/2/thumbnail.jpg</images>
+  </products>
+  <products>
+    <id>3</id>
+    <title>Samsung Universe 9</title>
+    <description>Samsung&#x27;s new variant which goes beyond Galaxy to the Universe</description>
+    <price>1249</price>
+    <discountPercentage>15.46</discountPercentage>
+    <rating>4.09</rating>
+    <stock>36</stock>
+    <brand>Samsung</brand>
+    <category>smartphones</category>
+    <thumbnail>https://i.dummyjson.com/data/products/3/thumbnail.jpg</thumbnail>
+    <images>https://i.dummyjson.com/data/products/3/1.jpg</images>
+  </products>
+  <products>
+    <id>4</id>
+    <title>OPPOF19</title>
+    <description>OPPO F19 is officially announced on April 2021.</description>
+    <price>280</price>
+    <discountPercentage>17.91</discountPercentage>
+    <rating>4.3</rating>
+    <stock>123</stock>
+    <brand>OPPO</brand>
+    <category>smartphones</category>
+    <thumbnail>https://i.dummyjson.com/data/products/4/thumbnail.jpg</thumbnail>
+    <images>https://i.dummyjson.com/data/products/4/1.jpg</images>
+    <images>https://i.dummyjson.com/data/products/4/2.jpg</images>
+    <images>https://i.dummyjson.com/data/products/4/3.jpg</images>
+    <images>https://i.dummyjson.com/data/products/4/4.jpg</images>
+    <images>https://i.dummyjson.com/data/products/4/thumbnail.jpg</images>
+  </products>
+  z
+  <total>100</total>
+  <skip>0</skip>
+  <limit>100</limit>
+</root>

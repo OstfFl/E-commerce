@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<categories>
+    <category>
+        <name>smartphones</name>
+        <slug>smartphones</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>laptops</name>
+        <slug>laptops</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>fragrances</name>
+        <slug>fragrances</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>skincare</name>
+        <slug>skincare</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>groceries</name>
+        <slug>groceries</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>home-decoration</name>
+        <slug>home-decoration</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>furniture</name>
+        <slug>furniture</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>tops</name>
+        <slug>tops</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>womens-dresses</name>
+        <slug>womens-dresses</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>womens-shoes</name>
+        <slug>womens-shoes</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>mens-shirts</name>
+        <slug>mens-shirts</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>mens-shoes</name>
+        <slug>mens-shoes</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>mens-watches</name>
+        <slug>mens-watches</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>womens-watches</name>
+        <slug>womens-watches</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>womens-bags</name>
+        <slug>womens-bags</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>womens-jewellery</name>
+        <slug>womens-jewellery</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>sunglasses</name>
+        <slug>sunglasses</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>automotive</name>
+        <slug>automotive</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>motorcycle</name>
+        <slug>motorcycle</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>lighting</name>
+        <slug>lighting</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>motorcycles</name>
+        <slug>motorcycles</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+    <category>
+        <name>cars</name>
+        <slug>cars</slug>
+        <created_at>2023-06-12 09:44:57</created_at>
+        <updated_at>2023-06-12 09:44:57</updated_at>
+    </category>
+</categories>
